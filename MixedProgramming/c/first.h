@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-#endif /* defined(__MixedProgramming__first__) */
+#endif
 int LCYprintln(char *str);
 void LCYprintln2(char *const str);
 char* LCYprintln3(const char *str);

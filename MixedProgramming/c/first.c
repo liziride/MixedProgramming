@@ -21,8 +21,8 @@ void LCYprintln2(char *const str){
 
 char* LCYprintln3(const char *str){
     printf("str=%s\n",str);
-    char *input;
-    scanf("%s",input);
+    char *input = "ddd";
+    scanf("%s\n",input);
     return input;
 }
 
