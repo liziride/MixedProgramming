@@ -38,6 +38,7 @@
 +(NSString*) getHaha2{
     return @"hahaha2";
 }
+
 -(int) getA{
     return a;
 }
