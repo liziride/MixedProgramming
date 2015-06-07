@@ -12,10 +12,31 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        forS()
+        forO()
+        forC()
+    }
+    
+    func forS(){
         var s1:Int64 = 123
         var s2 = CLong(s1 & 0x0FFFFFFFF)
         
+        var nsth = NSThread(target: self, selector: "nsthreadfunc:", object: "nima")
+        nsth.start()
+    }
+    
+    func nsthreadfunc(userinfo:AnyObject!){
+        NSLog("%@", "\(userinfo)_nsthread")
+    }
+    
+    func forO(){
+        var ofirst = OFirst()
+        ofirst.LCYprintln("d_d")
+        ofirst.setA(22)
+        NSLog("%@,%d", OFirst.getHaha(),ofirst.getA() + ofirst.getC())
+    }
+    
+    func forC(){
         // Do any additional setup after loading the view, typically from a nib.
         //string [CChar](CChar == Int8) to char * char[]
         if var p = "str".cStringUsingEncoding(NSUTF8StringEncoding){
@@ -34,11 +55,6 @@ class ViewController: UIViewController {
                 NSLog("rtn=%@", rtnstr)
             }
         }
-        
-        var ofirst = OFirst()
-        ofirst.LCYprintln("d_d")
-        ofirst.setA(22)
-        NSLog("%@,%d", OFirst.getHaha(),ofirst.getA() + ofirst.getC())
     }
     
     override func didReceiveMemoryWarning() {

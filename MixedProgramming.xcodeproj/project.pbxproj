@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11280EC51B230E3E0047FE6F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11280EC41B230E3E0047FE6F /* TableViewController.swift */; };
 		1156E6AD1B201DC100641662 /* OFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1156E6AC1B201DC100641662 /* OFirst.m */; };
 		1156E6B31B20296C00641662 /* SomeThing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156E6B21B20296C00641662 /* SomeThing.swift */; };
 		11ECF6921B0ECE1900447FCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECF6911B0ECE1900447FCE /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11280EC41B230E3E0047FE6F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1156E6AC1B201DC100641662 /* OFirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OFirst.m; sourceTree = "<group>"; };
 		1156E6AE1B201E0700641662 /* OFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OFirst.h; sourceTree = "<group>"; };
 		1156E6B21B20296C00641662 /* SomeThing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeThing.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				1156E6B21B20296C00641662 /* SomeThing.swift */,
+				11280EC41B230E3E0047FE6F /* TableViewController.swift */,
 			);
 			name = swift;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11ECF6B81B0EDD7300447FCE /* first.c in Sources */,
+				11280EC51B230E3E0047FE6F /* TableViewController.swift in Sources */,
 				1156E6AD1B201DC100641662 /* OFirst.m in Sources */,
 				11ECF6971B0ECE1900447FCE /* ViewController.swift in Sources */,
 				11ECF6921B0ECE1900447FCE /* AppDelegate.swift in Sources */,
