@@ -10,11 +10,17 @@ import Foundation
 import UIKit
 
 class TableViewController: UITableViewController {
+    func map(sender:UITapGestureRecognizer){
+        let storybd = UIStoryboard(name: "Main", bundle: nil)
+        var map = storybd.instantiateViewControllerWithIdentifier("map") as! UIViewController
+        self.presentViewController(map, animated: true, completion: nil)
+    }
     let 哈哈10 = 10
     override func viewDidAppear(animated: Bool) {
         if let lab = tableView.viewWithTag(1) as? UILabel{
             lab.sizeToFit()
             println("哈哈10＝\(哈哈10)")
+            lab.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "map:"))
         }
         
         var count = tableView.visibleCells().count
