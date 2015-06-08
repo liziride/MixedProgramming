@@ -10,7 +10,13 @@ import Foundation
 import UIKit
 
 class TableViewController: UITableViewController {
+    let 哈哈10 = 10
     override func viewDidAppear(animated: Bool) {
+        if let lab = tableView.viewWithTag(1) as? UILabel{
+            lab.sizeToFit()
+            println("哈哈10＝\(哈哈10)")
+        }
+        
         var count = tableView.visibleCells().count
         count += 20
         for(var i = 0; i < count; i++){

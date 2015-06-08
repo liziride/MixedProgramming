@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "OFirst.h"
 
 @interface OFirst(){
@@ -53,6 +54,10 @@
 
 -(void) setC:(int)_c{
     c = _c;
+}
+
+-(void) test{
+    //UIImage *img = [UIImage imageNamed:@""];//UIImage(named:"")
 }
 
 @end

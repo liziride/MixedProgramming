@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         forS()
@@ -23,6 +22,8 @@ class ViewController: UIViewController {
         
         var nsth = NSThread(target: self, selector: "nsthreadfunc:", object: "nima")
         nsth.start()
+        
+        var data = "".dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
     }
     
     func nsthreadfunc(userinfo:AnyObject!){
