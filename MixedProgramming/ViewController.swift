@@ -7,13 +7,27 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ViewController: UIViewController {
+    var locationManager:CLLocationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*
         forS()
         forO()
         forC()
+        */
+        locationManager.requestWhenInUseAuthorization()
+        if let lab = self.view.viewWithTag(1) as? UILabel{
+            lab.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "map:"))
+        }
+    }
+    
+    func map(sender:UITapGestureRecognizer){
+        let storybd = UIStoryboard(name: "Main", bundle: nil)
+        var map = storybd.instantiateViewControllerWithIdentifier("map") as! UIViewController
+        self.presentViewController(map, animated: true, completion: nil)
     }
     
     func forS(){
@@ -63,7 +77,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
-
 /*
 %@                   对象
 
